@@ -63,27 +63,10 @@ namespace customer_client
             
             
 
-            //Resource.Drawable.waffleBurger;
+            //Resource.Drawable.water;
            
             int holder = 0;
             if (Intent.HasExtra("resId") && Intent.GetIntExtra("resId", holder) == 1)
-            {
-                menuItem glazedGingerBeef = new menuItem("Glazed Ginger Beef", "Candied shishito peppers, crisp ramen, poblano avacoado aioli, mango salsa", "14.50", 2130837512);
-                menuItem chickenTacos = new menuItem("Chicken tacos", "Poblano avacoado aioli, roma tomatoes, microgreens, brocolli slaw, shishito peppers, mango salsa", "13.00", 2130837507);
-                menuItem lobsterCake = new menuItem("Lobster Cakes", "Chili Remoulade, Roaster peppers", "14.25", 2130837515);
-                menuItem pasta = new menuItem("Creamy Pesto Penne", "Bechamel, proscioutto, chicken, tomato ", "18.50", 2130837519);
-                menuItem twoOneBurger = new menuItem("Two one Burger", "Mayo, Dijon, Arugala, roma tomatoes, onion, jam, pickles, aged cheddar, maple peppered bacon, brioche bun", "15.50", 2130837529);
-
-
-                menuList = new List<menuItem>();
-                menuList.Add(glazedGingerBeef);
-                menuList.Add(chickenTacos);
-                menuList.Add(lobsterCake);
-                menuList.Add(pasta);
-                menuList.Add(twoOneBurger);
-            }
-
-            if (Intent.HasExtra("resId") && Intent.GetIntExtra("resId", holder) == 2)
             {
                 menuItem strawberryMousse = new menuItem("Strawberry Mousse", "A creamy strawberry based served with a fresh cut strawberry in the glass of your choice", "18.00", 2130837526);
                 menuItem tenderloin = new menuItem("Tenderloin", "A delicious tenderloin steak, served with house seasoning on top of grilled vegetables", "22.00", 2130837521);
@@ -99,6 +82,23 @@ namespace customer_client
                 menuList.Add(steakFrites);
                 menuList.Add(tunaTataki);
                 menuList.Add(goudaBurger);
+            }
+
+            if (Intent.HasExtra("resId") && Intent.GetIntExtra("resId", holder) == 2)
+            {
+                menuItem pizza = new menuItem("Pizza", "Insert new description here", "14.50", 2130837520);
+                menuItem burger = new menuItem("Burger", "Insert new description here", "13.00", 2130837506);
+                menuItem iceCream = new menuItem("Ice Cream", "Insert new description here", "14.25", 2130837513);
+                menuItem soda = new menuItem("Soda", "Insert new description here", "18.50", 2130837524);
+                menuItem water = new menuItem("Water", "Insert new description here", "15.50", 2130837531);
+
+
+                menuList = new List<menuItem>();
+                menuList.Add(pizza);
+                menuList.Add(burger);
+                menuList.Add(iceCream);
+                menuList.Add(soda);
+                menuList.Add(water);
             }
 
                 
