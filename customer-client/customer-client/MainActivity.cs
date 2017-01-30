@@ -5,7 +5,7 @@ using System;
 
 namespace customer_client
 {
-    [Activity(Label = "Quick Byte", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "CIBUS", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         private Button login;
