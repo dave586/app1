@@ -68,11 +68,11 @@ namespace customer_client
             int holder = 0;
             if (Intent.HasExtra("resId") && Intent.GetIntExtra("resId", holder) == 1)
             {
-                menuItem strawberryMousse = new menuItem("Strawberry Mousse", "A creamy strawberry based served with a fresh cut strawberry in the glass of your choice", "18.00", 2130837526);
-                menuItem tenderloin = new menuItem("Tenderloin", "A delicious tenderloin steak, served with house seasoning on top of grilled vegetables", "22.00", 2130837521);
-                menuItem steakFrites = new menuItem("Steak Frites", "A juicy high grade steak, served with microgreens, and cheesy frites", "18.00", 2130837525);
-                menuItem tunaTataki = new menuItem("Tuna Tataki", "A savoury smoked tuna served with a light and spicy manga sala", "15.00", 2130837527);
-                menuItem goudaBurger = new menuItem("Gouda Burger", "A colourful pink waffle burger, served with gouda cheese and the toppings of your choice", "14.00", 2130837530);
+                menuItem strawberryMousse = new menuItem("Strawberry Mousse", "A creamy strawberry based served with a fresh cut strawberry in the glass of your choice", "18.00", Resource.Drawable.strawberryMousse);
+                menuItem tenderloin = new menuItem("Tenderloin", "A delicious tenderloin steak, served with house seasoning on top of grilled vegetables", "22.00", Resource.Drawable.primeRib);
+                menuItem steakFrites = new menuItem("Steak Frites", "A juicy high grade steak, served with microgreens, and cheesy frites", "18.00", Resource.Drawable.steakFrites);
+                menuItem tunaTataki = new menuItem("Tuna Tataki", "A savoury smoked tuna served with a light and spicy manga sala", "15.00", Resource.Drawable.tunaTataki);
+                menuItem goudaBurger = new menuItem("Gouda Burger", "A colourful pink waffle burger, served with gouda cheese and the toppings of your choice", "14.00", Resource.Drawable.twoOneBurger);
 
 
 
@@ -86,11 +86,11 @@ namespace customer_client
 
             if (Intent.HasExtra("resId") && Intent.GetIntExtra("resId", holder) == 2)
             {
-                menuItem pizza = new menuItem("Pizza", "Insert new description here", "14.50", 2130837520);
-                menuItem burger = new menuItem("Burger", "Insert new description here", "13.00", 2130837506);
-                menuItem iceCream = new menuItem("Ice Cream", "Insert new description here", "14.25", 2130837513);
-                menuItem soda = new menuItem("Soda", "Insert new description here", "18.50", 2130837524);
-                menuItem water = new menuItem("Water", "Insert new description here", "15.50", 2130837531);
+                menuItem pizza = new menuItem("Pizza", "Insert new description here", "14.50", Resource.Drawable.pizza);
+                menuItem burger = new menuItem("Burger", "Insert new description here", "13.00", Resource.Drawable.burger);
+                menuItem iceCream = new menuItem("Ice Cream", "Insert new description here", "14.25", Resource.Drawable.icecream);
+                menuItem soda = new menuItem("Soda", "Insert new description here", "18.50", Resource.Drawable.soda);
+                menuItem water = new menuItem("Water", "Insert new description here", "15.50", Resource.Drawable.water);
 
 
                 menuList = new List<menuItem>();
