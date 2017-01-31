@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:background="@color/white">
     <RelativeLayout
         android:minWidth="25px"
         android:minHeight="25px"
@@ -19,22 +20,29 @@
             android:gravity="center"
             android:id="@+id/getTableHeader" />
         <Button
-            android:text="Get QR Code"
-            android:layout_width="wrap_content"
+            android:text="Use QR Code"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/getTableHeader"
             android:id="@+id/getGRCode"
-            android:layout_marginTop="63.0dp" />
+            android:layout_marginTop="60.0dp"
+            android:layout_marginRight="90.0dp"
+            android:layout_marginLeft="90.0dp" />
         <EditText
             android:inputType="numberDecimal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="299.0dp"
+            android:layout_height="40.0dp"
             android:layout_below="@id/getGRCode"
             android:id="@+id/enterTableNumber"
             android:layout_marginTop="82.0dp"
             android:layout_marginLeft="54.0dp"
-            android:layout_marginRight="54.0dp" />
+            android:layout_marginRight="54.0dp"
+            android:layout_marginBottom="34.5dp"
+            android:textColor="#000000"
+            android:background="#808080"
+            android:textAlignment="center"
+            android:layout_centerInParent="true" />
         <Button
             android:text="Manually Enter Table Number"
             android:layout_width="wrap_content"
@@ -44,7 +52,7 @@
             android:id="@+id/tableSubmit" />
     </RelativeLayout>
     <ImageView
-        android:src="@drawable/cibus-01"
+        android:src="@drawable/cibus01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/imageView1" />
