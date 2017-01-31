@@ -44,7 +44,7 @@
             android:id="@+id/tableSubmit" />
     </RelativeLayout>
     <ImageView
-        android:src="@drawable/OrangeLogo"
+        android:src="@drawable/cibus-01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/imageView1" />
