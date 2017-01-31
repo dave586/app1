@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--put color and stuff here to be used-->
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">customer-client</string>
   <color name="white">#FFFFFF</color>
